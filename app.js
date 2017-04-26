@@ -20,7 +20,7 @@ function displayResults(input) {
 	var searchResults = '';
 	if (input.items) {
 		input.items.forEach(function(item) {
-		 searchResults += '<p><img src="' + item.snippet.thumbnails.medium.url + '"></p>';
+		 searchResults += '<p><a href="https://www.youtube.com/watch?v=' + item.id.videoId + '" rel="prettyPhoto" title="' + item.snippet.title +'">' + '<img src="' + item.snippet.thumbnails.medium.url + '" alt="youtube" width="200"></a></p>';
 		});
 	}
 	else {
